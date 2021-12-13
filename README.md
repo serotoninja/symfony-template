@@ -23,6 +23,12 @@
 [![bootstrap:51](https://img.shields.io/badge/bootstrap-5.1-7952b3.svg?style=flat-square)](https://getbootstrap.com/)
 [![bootstrap-icons:51](https://img.shields.io/badge/bootstrap--icons-1.7-7952b3.svg?style=flat-square)](https://icons.getbootstrap.com/)
 
+### Version 1.0.0 
+* Symfony 5.4
+* PHP 7.2
+* MySQL 5.7
+
+
 ### Clone the GitHub repository
 ```bash
 $ git clone git@github.com:serotoninja/symfony-template.git
