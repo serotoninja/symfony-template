@@ -1,0 +1,223 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-4 p-5 text-light bg-black rounded-3">
+        <h1 class="display-5 fw-bold">{{ action_name }} says: "Hello!"</h1>
+        <p class="col-md-8 fs-5 mt-5">
+            This friendly message is coming from:
+        </p>
+        <ul class="col-md-8 fs-6">
+            <li>Your controller at <code><a href="{{ '/var/www/src/Controller/TemplateController.php'|file_link(0) }}">src/Controller/TemplateController.php</a></code></li>
+            <li>Your template at <code><a href="{{ '/var/www/templates/template/index.html.twig'|file_link(0) }}">templates/template/index.html.twig</a></code></li>
+        </ul>
+        <div class="mt-5">
+            <button class="btn btn-primary btn-lg" type="button">{{ icon('emoji-heart-eyes pe-2') }} Button w/ icon</button>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-light">
+        <div class="row">
+            <div class="col text-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Welcome</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 text-light">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2 class="fs-3 fw-bold">Documentation resources</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('template_foo') }}">Foo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('template_bar') }}">Bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="mb-5">
+                    {# Backend #}
+                    <div class="row mb-2">
+                        <div class="col">
+                            <h3 class="fs-5 fw-bold text-center">Backend technologies</h3>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://docs.docker.com/" target="_blank">Docker</a><br/>
+                                        Developers love Docker
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://help.ubuntu.com/18.04/ubuntu-help/" target="_blank">Ubuntu 18.04</a><br/>
+                                        Open-source Operating system
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://dev.mysql.com/doc/refman/5.7/en/" target="_blank">MySQL 5.7</a><br/>
+                                        Open-source RDBMS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="http://supervisord.org/" target="_blank">Supervisor Deamon</a><br/>
+                                        Process Control System
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://www.php.net/manual/en/" target="_blank">PHP 7.2</a><br/>
+                                        Web development scripting language
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://symfony.com/doc/5.4/index.html" target="_blank">Symfony 5.4</a><br/>
+                                        PHP framework
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    {# Frontend #}
+                    <div class="row mb-2">
+                        <div class="col">
+                            <h3 class="fs-5 fw-bold text-center">Frontend technologies</h3>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://getbootstrap.com/docs/5.1" target="_blank">jQuery 3.6</a><br/>
+                                        Fast, small, and feature-rich JavaScript library
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://getbootstrap.com/docs/5.1" target="_blank">Bootstrap 5.1</a><br/>
+                                        Build fast, responsive sites
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons</a><br/>
+                                        Free, high quality, open source icon library
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://swup.js.org/getting-started" target="_blank">Swup</a><br/>
+                                        Page transition library
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://turbo.hotwired.dev/handbook/introduction" target="_blank">Hotwired Turbo</a><br/>
+                                        Deliver HTML directly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    {# Tools #}
+                    <div class="row mb-2">
+                        <div class="col">
+                            <h3 class="fs-5 fw-bold text-center">Build tools</h3>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://getcomposer.org/doc/" target="_blank">Composer 2</a><br/>
+                                        PHP dependency management
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-black">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <a href="https://classic.yarnpkg.com/lang/en/docs/" target="_blank">Yarn 1.22</a><br/>
+                                        Frontend package manager
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

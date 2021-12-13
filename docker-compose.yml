@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: resources/docker/apache2/
+      dockerfile: Dockerfile
+    container_name: web.symfony-template
+    #user: ${CURRENT_UID}
+    environment:
+      DOCUMENTROOT: public
+      XDEBUG_CONFIG: remote_host=172.17.0.1
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/var/www:cached
+    links:
+      - db
+  db:
+    image: mysql:5.7
+    container_name: db.symfony-template
+    command: mysqld --user=root --verbose
+    volumes:
+      - .docker/db/var/lib/mysql:/var/lib/mysql:cached
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+
+###> doctrine/doctrine-bundle ###
+#  database:
+#    image: postgres:${POSTGRES_VERSION:-13}-alpine
+#    environment:
+#      POSTGRES_DB: ${POSTGRES_DB:-app}
+#      # You should definitely change the password in production
+#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ChangeMe}
+#      POSTGRES_USER: ${POSTGRES_USER:-symfony}
+#    volumes:
+#      - db-data:/var/lib/postgresql/data:rw
+#      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+#      # - ./docker/db/data:/var/lib/postgresql/data:rw
+###< doctrine/doctrine-bundle ###
+
+#volumes:
+###> doctrine/doctrine-bundle ###
+#  db-data:
+###< doctrine/doctrine-bundle ###
