@@ -5,15 +5,15 @@
 <h1 align="center">Symfony Template</h1>
 <h4 align="center">Dockerized web application development stripped to the boots</h4>
 
-[![ubuntu:18](https://img.shields.io/badge/ubuntu-18.04-404040.svg?style=flat-square)](https://www.ubuntu.com/)
+[![ubuntu:20](https://img.shields.io/badge/ubuntu-20.04-404040.svg?style=flat-square)](https://www.ubuntu.com/)
 [![apache-httpd:2021](https://img.shields.io/badge/apache-2.4-79289b.svg?style=flat-square)](https://httpd.apache.org/)
-[![mysql:57](https://img.shields.io/badge/mysql-5.7-aa6617.svg?style=flat-square)](https://www.mysql.com/)
-[![php:72](https://img.shields.io/badge/php-7.2-4F5B93.svg?style=flat-square)](https://www.php.net/)
+[![mysql:8](https://img.shields.io/badge/mysql-8-aa6617.svg?style=flat-square)](https://www.mysql.com/)
+[![php:8](https://img.shields.io/badge/php-8-4F5B93.svg?style=flat-square)](https://www.php.net/)
 [![composer:21](https://img.shields.io/badge/composer-2.1-a35c11.svg?style=flat-square)](https://getcomposer.org/)
 [![nodejs:14](https://img.shields.io/badge/nodejs-14.18-333333.svg?style=flat-square)](https://nodejs.org/en/)
 [![yarn:122](https://img.shields.io/badge/yarn-1.22-29799f.svg?style=flat-square)](https://yarnpkg.com/)
 
-[![symfony:54](https://img.shields.io/badge/symfony/*-5.4-374960.svg?style=flat-square)](https://www.symfony.com/)
+[![symfony:6](https://img.shields.io/badge/symfony/*-6-374960.svg?style=flat-square)](https://www.symfony.com/)
 [![symfony-flex:1](https://img.shields.io/badge/symfony/flex-1.17-374960.svg?style=flat-square)](https://www.symfony.com/)
 [![symfony-ux:2](https://img.shields.io/badge/symfony/ux-2.0-374960.svg?style=flat-square)](https://github.com/symfony/ux)
 [![symfony-ux-swup:2](https://img.shields.io/badge/symfony/ux--swup-2.0-374960.svg?style=flat-square)](https://github.com/symfony/ux-swup)
@@ -23,10 +23,10 @@
 [![bootstrap:51](https://img.shields.io/badge/bootstrap-5.1-7952b3.svg?style=flat-square)](https://getbootstrap.com/)
 [![bootstrap-icons:51](https://img.shields.io/badge/bootstrap--icons-1.7-7952b3.svg?style=flat-square)](https://icons.getbootstrap.com/)
 
-### Version 1.0.3
-* Symfony 5.4
-* PHP 7.2
-* MySQL 5.7
+### Version 2.0.0-alpha
+* Symfony 6
+* PHP 8
+* MySQL 8
 
 
 ### Clone the GitHub repository
