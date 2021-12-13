@@ -1,6 +1,27 @@
 {
+    "name": "serotoninja/symfony-template",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
+    "description": "Dockerized web application development stripped to the boots",
+    "keywords": [
+        "docker",
+        "symfony",
+        "symfony-ux",
+        "rdbms",
+        "php",
+        "javascript",
+        "bootstrap"
+    ],
+    "authors": [
+        {
+            "name": "Wolfgang Pöhler",
+            "email": "serotoninja@gmail.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -46,6 +67,7 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "^5.4",
         "symfony/css-selector": "^5.4",
         "symfony/debug-bundle": "^5.4",
@@ -96,9 +118,9 @@
         "symfony/symfony": "*"
     },
     "extra": {
-        "symfony": {
-            "allow-contrib": false,
-            "require": "^5.4"
+        "thanks": {
+            "name": "serotoninja",
+            "url": "https://github.com/serotoninja"
         }
     }
 }
