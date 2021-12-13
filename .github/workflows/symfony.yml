@@ -9,6 +9,9 @@ on:
 jobs:
   symfony-tests:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
     steps:
     #  To automatically get bug fixes and new Php versions for shivammathur/setup-php,
     # change this to (see https://github.com/shivammathur/setup-php#bookmark-versioning):
@@ -17,8 +20,10 @@ jobs:
       with:
         php-version: '7.4'
     - uses: actions/checkout@v2
+    
     - name: Copy .env.test.local
       run: php -r "file_exists('.env.test.local') || copy('.env.test', '.env.test.local');"
+      
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v2
@@ -27,13 +32,27 @@ jobs:
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
+          
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      
     - name: Create Database
       run: |
-        mkdir -p data
-        touch data/database.sqlite
+        #mkdir -p data
+        touch var/database.sqlite
+        
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
-        DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
+        DATABASE_URL: sqlite:///%kernel.project_dir%/var/database.sqlite
       run: php bin/phpunit
+      
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build frontend
+      run: |
+        yarn --install
+        yarn encore production
+        
