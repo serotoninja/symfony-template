@@ -5,7 +5,7 @@
 <h1 align="center">Symfony Template</h1>
 <h4 align="center">Dockerized web application development stripped to the boots</h4>
 
-[![ubuntu:20](https://img.shields.io/badge/ubuntu-20.04-404040.svg?style=flat-square)](https://www.ubuntu.com/)
+[![ubuntu:18](https://img.shields.io/badge/ubuntu-18.04-404040.svg?style=flat-square)](https://www.ubuntu.com/)
 [![apache-httpd:2021](https://img.shields.io/badge/apache-2.4-79289b.svg?style=flat-square)](https://httpd.apache.org/)
 [![mysql:8](https://img.shields.io/badge/mysql-8-aa6617.svg?style=flat-square)](https://www.mysql.com/)
 [![php:8](https://img.shields.io/badge/php-8-4F5B93.svg?style=flat-square)](https://www.php.net/)

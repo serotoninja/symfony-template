@@ -16,8 +16,8 @@ RUN add-apt-repository ppa:ondrej/php -y && apt-get update && apt-get clean
 RUN apt-get purge --auto-remove nodejs && curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 
 RUN apt-get update -qq && apt-get upgrade -y && apt-get install -y nodejs wget yarn apache2 python-pip \
-    libapache2-mod-php7.2 php7.2 php7.2-cli php7.2-common php7.2-mysql php7.2-intl php7.2-mbstring php7.2-gd \
-    php7.2-sqlite php7.2-curl php7.2-json php7.2-opcache php7.2-readline php7.2-xdebug php7.2-xml php7.2-zip
+    libapache2-mod-php8.0 php8.0 php8.0-cli php8.0-common php8.0-mysql php8.0-intl php8.0-mbstring php8.0-gd \
+    php8.0-sqlite php8.0-curl php8.0-opcache php8.0-readline php8.0-xdebug php8.0-xml php8.0-zip
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -44,8 +44,8 @@ RUN ln -sn /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enab
 ADD fqdn.conf /etc/apache2/conf-available/fqdn.conf
 RUN a2enconf fqdn
 
-ADD php.ini /etc/php/7.2/apache2/php.ini
-ADD xdebug.ini /etc/php/7.2/mods-available/xdebug.ini
+ADD php.ini /etc/php/8.0/apache2/php.ini
+ADD xdebug.ini /etc/php/8.0/mods-available/xdebug.ini
 
 EXPOSE 80 443
 

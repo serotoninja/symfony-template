@@ -88,12 +88,6 @@
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
-    "laminas/laminas-eventmanager": {
-        "version": "3.2.1"
-    },
-    "laminas/laminas-zendframework-bridge": {
-        "version": "1.1.1"
-    },
     "monolog/monolog": {
         "version": "2.3.5"
     },
@@ -405,9 +399,6 @@
     },
     "symfony/security-csrf": {
         "version": "v5.4.0"
-    },
-    "symfony/security-guard": {
-        "version": "v5.2.12"
     },
     "symfony/security-http": {
         "version": "v5.2.12"
