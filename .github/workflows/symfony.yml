@@ -38,7 +38,7 @@ jobs:
       
     - name: Create Database
       run: |
-        #mkdir -p data
+        mkdir -p var
         touch var/database.sqlite
         
     - name: Execute tests (Unit and Feature tests) via PHPUnit
