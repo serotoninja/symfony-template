@@ -41,6 +41,11 @@ jobs:
         mkdir -p var
         touch var/database.sqlite
         
+    - name: Create fake bootstrap-icons.scss
+      run: |
+        mkdir -p assets/icons/font
+        touch assets/icons/font/bootstrap-icons.scss
+        
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DATABASE_URL: sqlite:///%kernel.project_dir%/var/database.sqlite
