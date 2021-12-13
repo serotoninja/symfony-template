@@ -72,6 +72,21 @@ $ docker-compose exec web tail -f /var/log/supervisor/supervisord.log
 $ docker-compose exec web composer install
 ```
 
+
+### Copy Bootstrap icons to assets
+```bash
+$ docker-compose exec web composer require twbs/bootstrap-icons && \
+  cp -R vendor/twbs/bootstrap-icons/font assets/icons/ && \
+  cp -R vendor/twbs/bootstrap-icons/icons assets/icons/ && \
+  cp vendor/twbs/bootstrap-icons/bootstrap-icons.* assets/icons/ && \
+  docker-compose exec web composer remove twbs/bootstrap-icons
+```
+
+
+
+
+
+
 ### Install yarn dependencies
 ```bash
 $ docker-compose exec web yarn install

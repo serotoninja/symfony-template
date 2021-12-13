@@ -27,4 +27,5 @@ yarn-error.log
 src/Controller/TestController.php
 templates/test
 supervisord.pid
+assets/icons
 resources/local
