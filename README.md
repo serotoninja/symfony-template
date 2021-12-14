@@ -7,7 +7,7 @@
 # Symfony Template
 
 #### Dockerized web application development stripped to the boots.
-An empty **Symfony 5.4** project hosted on Ubuntu 18.04 / Apache 2.4 / PHP 8.0 / MySQL 8.0
+An empty **Symfony 6** project hosted on Ubuntu 18.04 / Apache 2.4 / PHP 8.0 / MySQL 8.0
 #### Ready to use build tools
 composer / mysql-client / mysqldump / nodejs / npm / yarn
 
@@ -18,7 +18,7 @@ composer / mysql-client / mysqldump / nodejs / npm / yarn
 [![composer:21](https://img.shields.io/badge/composer-2-a35c11.svg?style=flat-square)](https://getcomposer.org/)
 [![nodejs:14](https://img.shields.io/badge/nodejs-14-333333.svg?style=flat-square)](https://nodejs.org/en/)
 [![yarn:122](https://img.shields.io/badge/yarn-1-29799f.svg?style=flat-square)](https://yarnpkg.com/)
-[![symfony:54](https://img.shields.io/badge/symfony/*-5.4-374960.svg?style=flat-square)](https://www.symfony.com/)
+[![symfony:6](https://img.shields.io/badge/symfony/*-6-374960.svg?style=flat-square)](https://www.symfony.com/)
 [![symfony-flex:1](https://img.shields.io/badge/symfony/flex-1.17-374960.svg?style=flat-square)](https://www.symfony.com/)
 [![symfony-ux:2](https://img.shields.io/badge/symfony/ux-2.0-374960.svg?style=flat-square)](https://github.com/symfony/ux)
 [![jquery:36](https://img.shields.io/badge/jquery-3.6-21568d.svg?style=flat-square)](https://getbootstrap.com/)
