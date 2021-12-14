@@ -1,0 +1,12 @@
+#!/bin/bash
+echo && echo "  Symfony Template - Docker container 'web'" && echo && echo "    Installed versions:"
+echo "    - apache2: `apache2 -v | head -1 | cut -d'/' -f2 | cut -d' ' -f1`"
+echo "    - composer: `composer --version | cut -d' ' -f3`"
+echo "    - mysql-client: `mysql -V | cut -d' ' -f4`"
+echo "    - mysqldump: `mysqldump --version | cut -d' ' -f4`"
+echo "    - php: `php -v | head -1 | cut -d' ' -f2`"
+echo "    - nodejs: `nodejs --version`"
+echo "    - npm: `npm --version`"
+echo "    - yarn: `yarn --version`" && echo
+echo "  And now go ahead and develop great web applications!" && echo
+exit 0
