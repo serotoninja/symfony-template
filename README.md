@@ -23,10 +23,16 @@
 [![bootstrap:51](https://img.shields.io/badge/bootstrap-5.1-7952b3.svg?style=flat-square)](https://getbootstrap.com/)
 [![bootstrap-icons:51](https://img.shields.io/badge/bootstrap--icons-1.7-7952b3.svg?style=flat-square)](https://icons.getbootstrap.com/)
 
-### Version 1.1.1
-* Symfony 5.4
-* PHP 7.4
+### Local development sandbox
+Docker is the only local requirement.
+
+#### Provides:
+* Apache 2.4
+* PHP 8.0
 * MySQL 8.0
+* Symfony 5.4
+* Composer 2.1
+* Yarn 1.22
 
 
 ### Clone the GitHub repository
