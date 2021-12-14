@@ -63,7 +63,7 @@ $ docker-compose stop
 
 ### Rebuilt containers
 ```bash
-$ sudo rm -rf vendor .docker && \
+$ sudo rm -rf .docker var/* vendor && \
   docker-compose stop && docker-compose rm && docker-compose build && docker-compose up
 ```
 
