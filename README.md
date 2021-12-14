@@ -39,8 +39,7 @@ $ cd symfony-template
 2. Run `docker-compose up --build` and stop with `[CTRL]-C` if succeeded.
 3. Start containers detached with `docker-compose up -d`. Stop with `docker-compose down` when no longer needed.
 4. Use `docker-compose exec web version_check` to see what you're dealing with.
-5. 
-6. Install composer dependencies and retrieve current version of bootstrap-icons:
+5. Install composer dependencies and retrieve current version of bootstrap-icons:
     ```bash
     $ docker-compose exec web composer install 
     $ docker-compose exec web composer require twbs/bootstrap-icons && \
@@ -49,12 +48,12 @@ $ cd symfony-template
     cp vendor/twbs/bootstrap-icons/bootstrap-icons.* assets/icons/ && \
     docker-compose exec web composer remove twbs/bootstrap-icons
     ```
-7. Install frontend dependencies and build frontend:
+6. Install frontend dependencies and build frontend:
     ```bash
     $ docker-compose exec web yarn install
     $ docker-compose exec web yarn encore dev
     ```
-8. Navigate your browser to `http://localhost/template` to test.
+7. Navigate your browser to `http://localhost/template` to test.
 
 ### 3. And now go ahead and develop great web applications!
 Take care and stay healthy!
