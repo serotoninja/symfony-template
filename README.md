@@ -7,7 +7,7 @@
 # Symfony Template
 
 #### Dockerized web application development stripped to the boots.
-An empty **Symfony 5.4** project hosted on Ubuntu 18.04, Apache 2.4 with PHP 8.0 and MySQL 8.0
+An empty **Symfony 5.4** project hosted on Ubuntu 18.04 / Apache 2.4 / PHP 8.0 / MySQL 8.0
 #### Ready to use build tools
 composer / mysql-client / mysqldump / nodejs / npm / yarn
 
